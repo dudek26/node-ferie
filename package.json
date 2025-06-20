@@ -1,12 +1,27 @@
 {
-	"name": "node-holiday",
-	"version": "1.0.0",
-	"description": "",
-	"license": "ISC",
-	"author": "dudko",
-	"type": "commonjs",
-	"main": "build/index.js",
-	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1"
-	}
+    "name": "@dudko/node-holiday",
+    "version": "1.0.0",
+    "description": "Pakiet npm do określania ustawowych dni wolnych od zajęć dydaktycznych.",
+    "license": "MIT",
+    "author": "dudko",
+    "type": "module",
+    "main": "dist/index.js",
+    "scripts": {
+        "build": "tsc",
+        "ci": "npm run build && npm run check-format && npm run check-exports",
+        "dev": "tsx --watch",
+        "format": "prettier --write .",
+        "check-format": "prettier --check .",
+        "check-exports": "attw --pack . --ignore-rules=cjs-resolves-to-esm",
+        "publish-private": "npm publish --access=restricted"
+    },
+    "files": [
+        "dist"
+    ],
+    "devDependencies": {
+        "@arethetypeswrong/cli": "^0.18.2",
+        "prettier": "^3.5.3",
+        "tsx": "^4.20.3",
+        "typescript": "^5.8.3"
+    }
 }
