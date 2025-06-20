@@ -16,6 +16,10 @@
 	"files": [
 		"dist"
 	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/dudek26/node-ferie.git"
+	},
 	"devDependencies": {
 		"@arethetypeswrong/cli": "^0.18.2",
 		"prettier": "^3.5.3",
