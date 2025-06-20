@@ -1,5 +1,7 @@
-export type { HolidayType } from './types/holiday-type.js';
+import { setupHolidays } from './holidays.js';
 
-export function findHoliday(date: Date) {
-    return null;
-}
+export type { Holiday } from './types/holiday.js';
+
+export { checkHolidays } from './holidays.js';
+
+setupHolidays();
