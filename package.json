@@ -1,5 +1,5 @@
 {
-	"name": "node-ferie",
+	"name": "@dudek26/node-ferie",
 	"version": "1.0.0",
 	"description": "Pakiet NPM do określania ustawowych dni wolnych od zajęć dydaktycznych.",
 	"license": "MIT",
