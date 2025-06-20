@@ -1,6 +1,6 @@
 export function areDatesEqual(date1: Date, date2: Date): boolean {
-    return (
-        date1.getMonth() === date2.getMonth() &&
-        date1.getDate() === date2.getDate()
-    );
+	return (
+		date1.getMonth() === date2.getMonth() &&
+		date1.getDate() === date2.getDate()
+	);
 }

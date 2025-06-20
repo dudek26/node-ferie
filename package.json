@@ -1,24 +1,24 @@
 {
-    "name": "node-ferie",
-    "version": "1.0.0",
-    "description": "Pakiet NPM do określania ustawowych dni wolnych od zajęć dydaktycznych.",
-    "license": "MIT",
-    "author": "dudko",
-    "type": "module",
-    "main": "dist/index.js",
-    "scripts": {
-        "build": "tsc",
-        "ci": "npm run build && npm run check-format && npm run check-exports",
-        "format": "prettier --write .",
-        "check-format": "prettier --check .",
-        "check-exports": "attw --pack . --ignore-rules=cjs-resolves-to-esm"
-    },
-    "files": [
-        "dist"
-    ],
-    "devDependencies": {
-        "@arethetypeswrong/cli": "^0.18.2",
-        "prettier": "^3.5.3",
-        "typescript": "^5.8.3"
-    }
+	"name": "node-ferie",
+	"version": "1.0.0",
+	"description": "Pakiet NPM do określania ustawowych dni wolnych od zajęć dydaktycznych.",
+	"license": "MIT",
+	"author": "dudko",
+	"type": "module",
+	"main": "dist/index.js",
+	"scripts": {
+		"build": "tsc",
+		"ci": "npm run build && npm run check-format && npm run check-exports",
+		"format": "prettier --write .",
+		"check-format": "prettier --check .",
+		"check-exports": "attw --pack . --ignore-rules=cjs-resolves-to-esm"
+	},
+	"files": [
+		"dist"
+	],
+	"devDependencies": {
+		"@arethetypeswrong/cli": "^0.18.2",
+		"prettier": "^3.5.3",
+		"typescript": "^5.8.3"
+	}
 }
