@@ -42,6 +42,9 @@ function summerBreakPredicate(date: Date) {
     return isDateInRange(date, start, end);
 }
 
+/**
+ * https://prawo.vulcan.edu.pl/przegdok.asp?qdatprz=akt&qplikid=4393
+ */
 export function setupSchoolBreaks(holidays: InternalHoliday[]) {
     holidays.push({
         name: 'Zimowa Przerwa Świąteczna',
