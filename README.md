@@ -1,3 +1,3 @@
 **node-ferie**
 
-Pakiet npm do określania ustawowych dni wolnych od zajęć dydaktycznych.
+Pakiet NPM do określania ustawowych dni wolnych od zajęć dydaktycznych.
