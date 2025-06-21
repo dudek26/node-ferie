@@ -45,3 +45,16 @@ export function checkHolidays(date: Date, type?: HolidayType) {
 		(holiday) => ({ name: holiday.name, type: holiday.type }) as Holiday,
 	);
 }
+
+export function getHolidays(year: number) {
+	let days =
+		(year % 4 === 0 && year % 100 !== 0) || year % 400 === 0 ? 366 : 365;
+	let holidays: { date: Date; holiday: Holiday }[] = [];
+	const date = new Date(year, 0, 1);
+	for (let day = 1; day <= days; day++) {
+		const hdays = checkHolidays(date);
+		holidays.push(...hdays.map((holiday) => ({ date, holiday })));
+		date.setDate(date.getDate() + 1);
+	}
+	return holidays;
+}
